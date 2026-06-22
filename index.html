@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Video</title>
+
+<style>
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+video {
+    width: 400px;      /* smaller size */
+    height: auto;      /* keeps original ratio */
+    object-fit: contain; /* no zoom/crop */
+    border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="video-container">
+
+    <video controls>
+        <source src="YOUR_GITHUB_RAW_VIDEO_LINK" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+</div>
+
+</body>
+</html>
